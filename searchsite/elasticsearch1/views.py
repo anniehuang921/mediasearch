@@ -31,7 +31,7 @@ def ui_first(request):
     # if request.get:
     #     return render_to_response('ui_first.html')
     if request.POST:
-        allq = request.POST['allq']
+        # allq = request.POST['allq']
         exact = request.POST['exact']
         least = request.POST['least']
         notq = request.POST['notq']
@@ -52,7 +52,7 @@ def ui_first(request):
         # date1 = request.POST['date1']
         # date2 = request.POST['date2']
         Esquery.objects.create(
-            allq = allq,
+            # allq = allq,
             exact = exact,
             least = least,
             notq = notq,
@@ -60,7 +60,7 @@ def ui_first(request):
             # author = author,
             # occur = occur,
             media = media,
-            sort = sort,
+            sort = sort
             # date1 = date1,
             # date2 = date2
         )
